@@ -3,7 +3,7 @@
 
 
 a {
-    font-family: 'Livvic', sans-serif;;
+    font-family: 'Livvic', sans-serif;
 }
 
 *:not(h1){
@@ -30,6 +30,15 @@ header:first-of-type h1 {
 
 a {
     padding: 2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #F46363;
+}
+
+a:visited {
+    color: white;
 }
 
 #game-section {
@@ -102,4 +111,62 @@ button {
     border-radius: 25px;
     background-color: #F46363;
     color: white;
+}
+
+.home-header {
+    background-color: white;
+}
+
+.home-header h1 {
+    color: #F46363;
+}
+
+.home-nav a{
+    color: black;
+}
+
+.main {
+    background-image: url("/assests/main-bg.jpeg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+}
+
+.cta {
+    height: 30%;
+    padding: 7rem;
+    margin-left: 5rem;
+}
+
+.cta h1 {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.cta a {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #F46363;
+    color: white;
+}
+
+#kana-chart {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.chart-card{
+    text-align: center;
+    border: 2px solid black;
+    width: 5rem;
+    margin: 2rem;
 }

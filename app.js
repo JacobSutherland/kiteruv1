@@ -13,7 +13,6 @@ let questionCounter = 0;
 button.addEventListener('click', () => {
     const question = questionRandomizer();
     questionCounter += 1;
-    console.log(questionCounter)
     
     //creates and displays a div element containing the random question
     const card = document.createElement('div');
@@ -58,10 +57,11 @@ button.addEventListener('click', () => {
                 if(e.target.textContent === characters[question].sound){
                     i.style.backgroundColor = '#22eaaa'
                     i.style.border = 'none'
+                } else {
+                    i.style.backgroundColor = '#F46363'
+                    i.style.border = 'none'
                 }
             })
         })
 
 })
-
-
