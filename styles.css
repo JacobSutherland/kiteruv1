@@ -37,7 +37,7 @@ a:hover {
     border-bottom: 2px solid #F46363;
 }
 
-a:visited {
+a:visited, a:link, a:active {
     color: white;
 }
 
@@ -154,6 +154,7 @@ button {
     border-radius: 25px;
     background-color: #F46363;
     color: white;
+    border: none;
 }
 
 #kana-chart {   
