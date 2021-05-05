@@ -1,4 +1,4 @@
-const kanaSection = document.querySelector('#kana-chart');
+const kanaSection = document.querySelector('.kana-card-container');
 
 for(let i = 0; i < characters.length; i++){
     const kanaExample =

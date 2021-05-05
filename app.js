@@ -3,6 +3,7 @@ const game = document.querySelector('.card-section');
 const button = document.querySelector('button');
 const cardSection = document.querySelector('.card-section');
 
+
 let questionRandomizer = () => {
     const roll = Math.floor(Math.random() * characters.length);
     return roll;

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic&family=Montserrat&display=swap');
 
+* {
+box-sizing: border-box;
+Max-width: 100%;
+Margin: 0;
+Padding: 0;
+Border: 0;
+}
 
 a {
     font-family: 'Livvic', sans-serif;
@@ -23,6 +30,15 @@ header {
     align-items: center;
     color: white;
 }
+
+.drop-down {
+    display: none;
+}
+
+.closed {
+    display: none;
+}
+
 
 header:first-of-type h1 {
     font-size: 4rem;
@@ -157,7 +173,7 @@ button {
     border: none;
 }
 
-#kana-chart {   
+.kana-card-container {   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -171,3 +187,160 @@ button {
     width: 5rem;
     margin: 2rem;
 }
+
+
+@media (max-width: 1200px){
+
+    .open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        padding: 2rem;
+    }
+
+    .closed {
+        display: none;
+    }
+
+    .close-menu {
+        height: 25px;
+        width: 25px;
+        align-self: flex-start;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    .drop-down {
+        display: inline;
+        height: 55px;
+        width: 55px;
+        align-self: baseline;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        
+    }
+
+    #game-section .drop-down {
+        order: 1;
+    }
+
+
+    .main {
+        justify-content: center;
+    }
+
+
+    .cta {
+        margin: 0 auto;
+        padding-left: 1rem;
+        
+    }
+
+    .banner {
+        display: none;
+    }
+
+    #game-section {
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    
+    .card-section {
+        align-items: center;
+        height: 100vh;
+        width: 80%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    
+    .card {
+        width: 35%;
+        text-align: center;
+        height: 45%;
+        box-shadow: 1px 1px 13px 2px rgba(0,0,0,0.56);
+        border-radius: 10px;
+    }
+    
+    .card h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    
+    .answer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        /* border: 2px solid red; */
+        
+    }
+    
+    .answer {
+        width: 30%;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        border: .4px solid black;
+    }
+    
+    .instructions {
+        width: 90%;
+        border: none;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    button {
+        border: none;
+        width: 70%;
+        line-height: 2rem;
+        border-radius: 25px;
+        background-color: #F46363;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    
+    
+}
+
+@media (max-width: 600px){
+    button {
+        width: 100%;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .kana-card-container {   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .chart-card{
+        text-align: center;
+        border: 2px solid black;
+        width: 5rem;
+        margin: 1rem;
+    }
+}
+    
