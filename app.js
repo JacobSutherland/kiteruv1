@@ -42,6 +42,7 @@ button.addEventListener('click', () => {
     //appends game elements, removes the large PNG once game starts, and updates button text
     cardSection.removeChild(cardSection.firstElementChild);
         button.textContent = "Next Kana"
+        button.style.backgroundColor = "#4A4949"
         game.appendChild(card);
         game.appendChild(options);
 

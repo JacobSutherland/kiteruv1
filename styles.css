@@ -129,6 +129,17 @@ button {
     color: white;
 }
 
+.end-game {
+    padding: 0px;
+    width: 70%;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #4A4949;
+    line-height: 2rem;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
 .home-header {
     background-color: white;
 }
@@ -183,7 +194,7 @@ button {
 
 .chart-card{
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #4A4949;
     width: 5rem;
     margin: 2rem;
 }
@@ -202,9 +213,13 @@ button {
         align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: black;
+        background-color: #4A4949;
         position: absolute;
         padding: 2rem;
+    }
+
+    .end-game {
+        margin-top: 2rem;
     }
 
     .closed {
@@ -322,15 +337,23 @@ button {
         border-radius: 25px;
         background-color: #F46363;
         color: white;
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
+        order: 1;
     }
 
+    .end-game {
+        margin-bottom: 2rem;
+    }
     
     
 }
 
 @media (max-width: 600px){
     button {
+        width: 100%;
+    }
+
+    .end-game {
         width: 100%;
     }
 
